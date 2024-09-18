@@ -181,7 +181,7 @@ nav .navbar {
 #Theme {
   background-color: #694ba1; }
   #Theme .sidebar {
-    background-color: #523b7e;
+    background-color: #3c2b5b;
     height: 4vh;
     width: 100%; }
   #Theme .switch-container {
@@ -195,23 +195,30 @@ nav .navbar {
     height: 20px;
     background-color: #ccc;
     border-radius: 40%;
-    top: 5px; }
+    top: 5px;
+    margin-right: 10px; }
   #Theme .switch input {
-    display: none; }
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0; }
   #Theme .sidebar {
     position: absolute;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: .4s;
+    transition: .4s; }
   #Theme .slider:before {
     position: absolute;
     content: "";
-    height: 12px;
-    width: 12px;
+    height: 14px;
+    width: 14px;
     border-radius: 50%;
-    left: 4px;
-    bottom: 1%;
+    left: 3px;
+    bottom: 3px;
     background-color: #694ba1;
     -webkit-transition: .4s;
-    transition: .4s; }
+    transition: .4s;
+    border-radius: 50%; }
   #Theme input:checked + .slider {
     background-color: #2196F3; }
   #Theme input:checked + .slider:before {

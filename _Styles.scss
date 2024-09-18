@@ -207,7 +207,7 @@ nav{
 #Theme{
     background-color: $them-background-color;
     .sidebar {
-        background-color: darken($them-background-color, $amount: 10);
+        background-color: darken($them-background-color, $amount: 20);
         height: 4vh;
         width: 100%;
     }
@@ -226,28 +226,35 @@ nav{
         background-color: #ccc;
         border-radius: 40%;
         top: 5px;
+        margin-right: 10px;
         
     }
 
     .switch input{
         display: none;
+        opacity: 0;
+        width: 0;
+        height: 0;
     }
 
     .sidebar{
         position: absolute;
         cursor: pointer;
+        transition: .4s;
+        
     }
 
     .slider:before {
         position: absolute;
         content: "";
-        height: 12px;
-        width: 12px;
+        height: 14px;
+        width: 14px;
         border-radius: 50%;
-        left: 4px;
-        bottom: 1%;
+        left: 3px;
+        bottom: 3px;
         background-color: $them-background-color;
         transition: .4s;
+        border-radius: 50%;
     }
     
     input:checked + .slider {
