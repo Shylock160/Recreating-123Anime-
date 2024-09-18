@@ -1,0 +1,29 @@
+@mixin Anchor{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@mixin Dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 500px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 10px;
+    
+
+    a{
+        float: left;
+        width: 25%;
+        line-height: 1em;
+        @include Anchor;
+        color: rgb(83, 69, 69);
+        padding: 6px 8px;
+       
+
+        &:hover{
+            background-color: rgb(221, 212, 212);
+        }
+    }
+}

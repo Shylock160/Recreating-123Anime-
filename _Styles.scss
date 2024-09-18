@@ -1,0 +1,262 @@
+@import '../Sass/Mixin';
+@import '../Sass/Variables';
+
+
+nav{
+    .header{
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem;
+
+        .logo-img > a{
+            margin-left: 30px;
+            margin-top: 50px;
+            font-size: 0.6rem;
+            position: absolute;
+            @include Anchor;
+        }
+
+        .logo-img{
+            position: relative;
+            display: flex;
+            flex-shrink: 0;
+            flex-grow: 0;
+            img{
+                width: 20%;
+                margin-right: 20px;
+            }
+
+            .icon{
+                margin: 5px 0 0 0;
+            }
+
+            .icon-2{
+                color: rgb(17, 216, 216);
+                margin-left: 10px;
+                font-size: 50px;
+            }
+
+            .terget{
+                margin-top: 5px;
+                border: 2px solid black;
+                width: 40%;
+                height: 35px;
+                border-radius: 5px;
+
+
+                input{
+                    outline: none;
+                    border: none; 
+                    margin: 5px 48% 5px 5px;
+                }
+            }
+        }
+
+        ol{
+            margin-top: 10px;
+            text-decoration: none;
+            list-style-type: none;
+
+            a{
+                @include Anchor;
+                color: rgb(83, 69, 69);
+            }
+        }
+    }
+
+    // Dropdown-menu
+    .navbar{
+        display: flex;
+        background-color: $them-background-color;
+        width: 100%;
+        height: 5vh;
+
+        // Styles to make the dropdown menu to show when hover
+
+        .dropdown:hover .drop-content {
+            display: block;
+        }
+
+        .dropdown:hover .drop-content-2 {
+            display: block;
+        }
+
+        // Styles to make the dropdown menu to show when hover close
+
+        .dropdown {
+            position: relative;
+            display: block;
+            padding: 5px 30px 5px 0;
+            cursor: pointer;
+            
+            &:hover{
+                display: block;
+                background-color: lighten($them-background-color, 10%);
+            }
+
+            .dropbtn{
+                color: #fff;
+            }
+
+            .drop-content {
+                display: none;
+                position: absolute;
+                background-color: #fff;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                margin-top: 10px;
+
+                a{
+                    display: block;
+                    @include Anchor;
+                    color: rgb(83, 69, 69);
+                    padding: 12px 16px;
+
+                    &:hover{
+                        background-color: rgb(221, 212, 212);
+                        display: block;
+                    }
+                }
+            }
+
+            .drop-content-2 {
+                @include Dropdown-menu;
+            }
+        }
+    }
+}
+
+#main-body{
+    background-color:lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    img{
+        padding: 15% 0 0 0;
+        width: 30%;
+    }
+
+    .search-bar{
+        display: flex;
+
+        input{
+            line-height: 50px;
+            height: 50px;
+            padding: 0 400px 0 20px;
+            max-width: 800px;
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 1.3rem;
+            outline-color:$them-background-color;  
+        }
+
+        .btn-submit{
+            padding: 0 20px;
+            background-color: $them-background-color;
+            border: none;
+            border-radius: none;
+            cursor: pointer;
+
+            .fa-magnifying-glass{
+                font-size: 20px;
+                color: #fff;
+                
+            }
+        }
+    }
+
+    .logo-content{
+        color: rgb(22, 199, 223);
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin: 0 0 2rem 0;
+    }
+
+    .trend-btn{
+        font-family: "Playfair Display", system-ui;
+        background-color: $them-background-color;
+        margin-top: 5px;
+        padding: 10px 5rem;
+        border-radius: 4px;
+        margin-bottom: 20px;
+
+        h3{
+            color: #fff;
+        }
+        &:hover{
+            background-color: darken($them-background-color, 10%);
+            cursor: pointer;
+        }
+    }
+
+}
+
+#text{
+    text-align: center;
+
+    h3, h4, p{
+        font-family: "EB Garamond", serif;
+        margin-bottom: 1rem;
+    }
+}
+
+#Theme{
+    background-color: $them-background-color;
+    .sidebar {
+        background-color: darken($them-background-color, $amount: 10);
+        height: 4vh;
+        width: 100%;
+    }
+
+    .switch-container{
+        text-align: right;
+        color: #ccc;
+        padding-right: 10rem;
+    }
+
+    .switch{
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+        background-color: #ccc;
+        border-radius: 40%;
+        top: 5px;
+        
+    }
+
+    .switch input{
+        display: none;
+    }
+
+    .sidebar{
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        left: 4px;
+        bottom: 1%;
+        background-color: $them-background-color;
+        transition: .4s;
+    }
+    
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+    
+    input:checked + .slider:before {
+        transform: translateX(14px);
+    }
+}
+
+
