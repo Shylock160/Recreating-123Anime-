@@ -179,7 +179,8 @@ nav .navbar {
     margin-bottom: 1rem; }
 
 #Theme {
-  background-color: #694ba1; }
+  background-color: #694ba1;
+  margin-bottom: 25px; }
   #Theme .sidebar {
     background-color: #3c2b5b;
     height: 4vh;
@@ -224,3 +225,15 @@ nav .navbar {
   #Theme input:checked + .slider:before {
     -webkit-transform: translateX(14px);
             transform: translateX(14px); }
+
+#theme-details {
+  padding: 5px 10% 5px 10%;
+  margin-top: 10px;
+  background-color: #6b4da4; }
+  #theme-details .Anime-list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    color: #ccc; }
+    #theme-details .Anime-list span {
+      margin: 0 5px 0 5px; }

@@ -206,6 +206,7 @@ nav{
 
 #Theme{
     background-color: $them-background-color;
+    margin-bottom: 25px;
     .sidebar {
         background-color: darken($them-background-color, $amount: 20);
         height: 4vh;
@@ -263,6 +264,23 @@ nav{
     
     input:checked + .slider:before {
         transform: translateX(14px);
+    }
+}
+
+//Theme-details
+
+#theme-details{
+    padding: 5px 10% 5px 10%;
+    margin-top: 10px;
+    background-color: lighten($color: $them-background-color, $amount: 1);
+
+    .Anime-list{
+        display: inline-flex;
+        color: #ccc;
+
+        span{
+            margin: 0 5px 0 5px;
+        }
     }
 }
 
