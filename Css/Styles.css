@@ -230,10 +230,58 @@ nav .navbar {
   padding: 5px 10% 5px 10%;
   margin-top: 10px;
   background-color: #6b4da4; }
-  #theme-details .Anime-list {
+  #theme-details .Anime {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    color: #ccc; }
-    #theme-details .Anime-list span {
+    color: #ccc;
+    margin-bottom: 20px;
+    margin-top: 10px; }
+    #theme-details .Anime span {
       margin: 0 5px 0 5px; }
+  #theme-details .Anime-list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    #theme-details .Anime-list div {
+      margin: 0 12px 8px 0;
+      border: #ccc;
+      padding: 5px;
+      background-color: #ccc; }
+      #theme-details .Anime-list div:hover {
+        background-color: #8367b8; }
+    #theme-details .Anime-list a {
+      text-decoration: none;
+      list-style-type: none;
+      color: #000;
+      background-color: transparent; }
+
+#naruto-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px; }
+  #naruto-logo .center {
+    text-align: center;
+    line-height: 1.2; }
+    #naruto-logo .center img {
+      width: 30%; }
+    #naruto-logo .center .space {
+      padding: 5px; }
+    #naruto-logo .center p {
+      text-align: center;
+      color: #fff; }
+    #naruto-logo .center .different {
+      color: #a08ac8; }
+  #naruto-logo .Right, #naruto-logo .Right-2 {
+    margin: 0 4rem 0 0;
+    color: #fff; }
+    #naruto-logo .Right a, #naruto-logo .Right-2 a {
+      text-decoration: none;
+      list-style-type: none;
+      line-height: 1.2;
+      color: #a08ac8; }
+      #naruto-logo .Right a:hover, #naruto-logo .Right-2 a:hover {
+        color: #fff; }
+  #naruto-logo .left-image {
+    margin-top: -50px; }

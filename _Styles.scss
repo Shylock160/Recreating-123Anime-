@@ -274,13 +274,87 @@ nav{
     margin-top: 10px;
     background-color: lighten($color: $them-background-color, $amount: 1);
 
-    .Anime-list{
+    .Anime{
         display: inline-flex;
         color: #ccc;
+        margin-bottom: 20px;
+        margin-top: 10px;
 
         span{
             margin: 0 5px 0 5px;
         }
+    }
+
+    .Anime-list{
+        display: inline-flex;
+
+        div{
+            margin:0 12px 8px 0;
+            border:#ccc;
+            padding: 5px;
+            background-color: #ccc;
+            &:hover{
+                background-color: lighten($color: $them-background-color, $amount: 10);
+            }
+            
+        }
+
+        a{
+            @include Anchor;
+            color: #000;
+            background-color: transparent;
+        }
+        
+    }
+}
+
+#naruto-logo{
+    display: flex;
+    margin-top: 20px;
+
+    //center
+    .center{
+        text-align: center;
+        line-height: 1.2;
+        img{
+            width: 30%;
+        }
+
+        .space{
+            padding: 5px;
+        }
+
+        p{
+            text-align: center;
+            color: #fff;
+        }
+
+        .different{
+            color:lighten($color: $them-background-color, $amount: 20);
+        }
+    }
+
+    //right
+
+    .Right, .Right-2{
+        margin: 0 4rem 0 0;
+        color: #fff;
+
+
+        a{
+            @include Anchor;
+            line-height: 1.2;
+            color:lighten($color: $them-background-color, $amount: 20);
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+
+    //left-image
+
+    .left-image{
+        margin-top: -50px;
     }
 }
 
