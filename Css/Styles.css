@@ -285,3 +285,14 @@ nav .navbar {
         color: #fff; }
   #naruto-logo .left-image {
     margin-top: -50px; }
+
+#footer {
+  margin: 5px 15% 0 15%;
+  text-align: left;
+  line-height: 1.2;
+  font-family: 'Times New Roman', Times, serif; }
+  #footer h4 {
+    text-align: center;
+    margin-bottom: 5px; }
+  #footer .h1, #footer h2, #footer h3, #footer h5, #footer h6, #footer p {
+    margin: 7px 0 7px 0; }
