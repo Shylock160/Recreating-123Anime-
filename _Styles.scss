@@ -1,5 +1,6 @@
 @import '../Sass/Mixin';
 @import '../Sass/Variables';
+@import "./Sass/Screen-size";
 
 
 nav{
@@ -364,7 +365,11 @@ nav{
     margin: 5px 15% 0 15%;
     text-align: left;
     line-height: 1.2;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .lead{
+        font-size: 20px;
+    }
     
 
     h4{

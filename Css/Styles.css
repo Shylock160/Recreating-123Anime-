@@ -5,6 +5,10 @@
           box-sizing: border-box;
   text-transform: capitalize; }
 
+@media (max-width: 600px) {
+  .header {
+    background-color: red;
+    width: 80%; } }
 nav .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,7 +294,9 @@ nav .navbar {
   margin: 5px 15% 0 15%;
   text-align: left;
   line-height: 1.2;
-  font-family: 'Times New Roman', Times, serif; }
+  font-family: Arial, Helvetica, sans-serif; }
+  #footer .lead {
+    font-size: 20px; }
   #footer h4 {
     text-align: center;
     margin-bottom: 5px; }
