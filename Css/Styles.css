@@ -7,8 +7,21 @@
 
 @media (max-width: 600px) {
   .header {
-    background-color: red;
-    width: 80%; } }
+    width: 85%; }
+    .header .logo-img {
+      width: 100%; }
+      .header .logo-img .terget {
+        position: relative;
+        margin-right: 20px; }
+        .header .logo-img .terget .icon {
+          position: absolute;
+          top: -0px;
+          right: -0px;
+          padding: 5px 0 0 0; }
+
+  .navbar {
+    margin-bottom: 1px;
+    padding: 0 0 50px 0; } }
 nav .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,9 +55,10 @@ nav .header {
     nav .header .logo-img .icon-2 {
       color: #11d8d8;
       margin-left: 10px;
-      font-size: 50px; }
+      font-size: 50px;
+      margin-top: 10px; }
     nav .header .logo-img .terget {
-      margin-top: 5px;
+      margin-top: 19px;
       border: 2px solid black;
       width: 40%;
       height: 35px;

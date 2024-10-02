@@ -17,7 +17,31 @@ $breakpoints: (
   @include respond-to('xs') {
     // Styles for small screens
     .header{
-        background-color: red;
-        width: 80%;
+        width: 85%;
+
+        .logo-img{
+          width: 100%;
+
+          .terget{
+            position: relative;
+            margin-right: 20px;
+            .icon{
+              position: absolute;
+              top: -0px;
+              right: -0px;
+              padding: 5px 0 0 0;
+            }
+          }
+          
+        }
+    }
+
+    .navbar{
+      margin-bottom: 1px;
+      padding: 0 0 50px 0;
+
+      .dropdown{
+        
+      }
     }
   }
