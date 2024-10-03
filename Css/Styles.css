@@ -6,8 +6,11 @@
   text-transform: capitalize; }
 
 @media (max-width: 600px) {
+  body {
+    overflow-x: hidden; }
+
   .header {
-    width: 85%; }
+    width: 80%; }
     .header .logo-img {
       width: 100%; }
       .header .logo-img .terget {
@@ -21,7 +24,53 @@
 
   .navbar {
     margin-bottom: 1px;
-    padding: 0 0 50px 0; } }
+    padding: 0 0 50px 0; }
+
+  .login {
+    cursor: pointer; }
+    .login ol li {
+      display: none; }
+    .login .icon-3 {
+      position: absolute;
+      top: 50px;
+      font-size: 20px; }
+
+  .logo-img > a {
+    left: -30px; }
+
+  .dropdown {
+    padding-left: 10px; }
+
+  #main-body .search-bar input {
+    padding: 0 200px 0 0 !important; }
+
+  #naruto-logo .left-image {
+    display: none; }
+
+  #theme-details #theme-details-2 .Anime-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  #theme-details #naruto-logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 10px; }
+    #theme-details #naruto-logo .Right {
+      position: absolute;
+      margin-bottom: 30px; }
+    #theme-details #naruto-logo .Right-2 {
+      -ms-flex-item-align: self-end;
+          align-self: self-end; }
+
+  #Theme .switch-container {
+    padding-right: 0 !important; } }
+@media (max-width: 768px) {
+  body {
+    background-color: aqua; } }
 nav .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,6 +116,10 @@ nav .header {
         outline: none;
         border: none;
         margin: 5px 48% 5px 5px; }
+  nav .header .login .icon-3 {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 10px; }
   nav .header ol {
     margin-top: 10px;
     text-decoration: none;
@@ -90,7 +143,8 @@ nav .navbar {
     position: relative;
     display: block;
     padding: 5px 30px 5px 0;
-    cursor: pointer; }
+    cursor: pointer;
+    padding-left: 10px; }
     nav .navbar .dropdown:hover {
       display: block;
       background-color: #8367b8; }
@@ -118,7 +172,7 @@ nav .navbar {
       display: none;
       position: absolute;
       background-color: #fff;
-      min-width: 500px;
+      min-width: 400px;
       -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
               box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
@@ -157,7 +211,7 @@ nav .navbar {
       line-height: 50px;
       height: 50px;
       padding: 0 400px 0 20px;
-      max-width: 800px;
+      max-width: 100%;
       width: 100%;
       border-radius: 4px;
       border: 1px solid #ccc;
@@ -302,7 +356,8 @@ nav .navbar {
       #naruto-logo .Right a:hover, #naruto-logo .Right-2 a:hover {
         color: #fff; }
   #naruto-logo .left-image {
-    margin-top: -50px; }
+    margin-top: -50px;
+    display: none; }
 
 #footer {
   margin: 5px 15% 0 15%;
