@@ -73,6 +73,9 @@ $breakpoints: (
   
   // search-bar section
   #main-body{
+    .main-body-img{
+      width: 200px !important;
+    }
     .search-bar{
       input{
         padding: 0 200px 0 0 !important;
@@ -122,6 +125,303 @@ $breakpoints: (
  // Styles for tablets screens
   @include respond-to('sm'){
     body{
-      background-color: aqua;
+      overflow-x: hidden;
     }
+
+    // navigation section
+    .header{
+        width: 90%;
+
+        .logo-img{
+          width: 100%;
+
+          .terget{
+            position: relative;
+            margin-right: 20px;
+            .icon{
+              position: absolute;
+              top: -0px;
+              right: -0px;
+              padding: 5px 0 0 0;
+            }
+          }
+          
+        }
+    }
+
+    .navbar{
+      margin-bottom: 1px;
+      padding: 0 0 50px 0;
+    }
+
+    .login{
+      cursor: pointer;
+      ol{
+        li{
+          display: none;
+        }
+      }
+      .icon-3{
+        position: absolute;
+        top: 50px;
+        font-size: 20px;
+
+      }
+      
+      
+    }
+
+    .logo-img > a{
+     left: -30px;
+  }
+
+  // dropdown meun section
+  .dropdown{
+    padding-left: 10px;
+  }
+  
+  // search-bar section
+  #main-body{
+   .main-body-img{
+      width: 500px;
+    }
+
+    .logo-content{
+      text-align: center;
+      
+    }
+    .search-bar{
+      input{
+        padding: 0 200px 0 0 !important;
+      }
+    }
+  }
+
+  // Change theme  section
+  #naruto-logo{
+    .left-image{
+      display: none;
+  }
+  }
+
+  #theme-details{
+
+    #theme-details-2{
+      .Anime-list{
+        flex-wrap: wrap;
+        flex: 1;
+      }
+    }
+
+    #naruto-logo{
+      flex-direction: column-reverse;
+      margin-bottom: 10px;
+
+      .Right{
+        position: absolute;
+        margin-bottom: 30px;
+      }
+
+      .Right-2{
+        align-self: self-end;
+      }
+    }
+  }
+
+  // The change theme icon
+  #Theme{
+    .switch-container{
+        padding-right: 0 !important;
+    }
+  }  
+  }
+
+ // Breakpoints for medium screen
+  @include respond-to('md'){
+    body{
+      overflow-x: hidden;
+    }
+
+    // navigation section
+    .header{
+        width: 95%;
+
+        .logo-img{
+          width: 100%;
+
+          .terget{
+            position: relative;
+            margin-right: 20px;
+            .icon{
+              position: absolute;
+              top: -0px;
+              right: -0px;
+              padding: 5px 0 0 0;
+            }
+          }
+          
+        }
+    }
+
+    .navbar{
+      margin-bottom: 1px;
+      padding: 0 0 50px 0;
+    }
+
+    .login{
+      cursor: pointer;
+      ol{
+        li{
+          display: none;
+        }
+      }
+      .icon-3{
+        position: absolute;
+        top: 50px;
+        font-size: 20px;
+
+      }
+      
+      
+    }
+
+    .logo-img > a{
+     left: -30px;
+  }
+
+  // dropdown meun section
+  .dropdown{
+    padding-left: 10px;
+  }
+  
+  // search-bar section
+  #main-body{
+   .main-body-img{
+      width: 500px;
+    }
+
+    .logo-content{
+      text-align: center;
+      
+    }
+  }
+
+  // Change theme  section
+  #naruto-logo{
+    .left-image{
+      display: none;
+  }
+  }
+
+  #theme-details{
+
+    #theme-details-2{
+      .Anime-list{
+        flex-wrap: wrap;
+        flex: 1;
+      }
+    }
+  }
+
+  // The change theme icon
+  #Theme{
+    .switch-container{
+        padding-right: 0 !important;
+    }
+  }  
+  }
+
+  //Breakpoints for large screen
+  @include respond-to('lg'){
+    body{
+      overflow-x: hidden;
+    }
+
+    // navigation section
+    .header{
+        width: 95%;
+
+        .logo-img{
+          width: 100%;
+
+          .terget{
+            position: relative;
+            margin-right: 20px;
+            .icon{
+              position: absolute;
+              top: -0px;
+              right: -0px;
+              padding: 5px 0 0 0;
+            }
+          }
+          
+        }
+    }
+
+    .navbar{
+      margin-bottom: 1px;
+      padding: 0 0 50px 0;
+    }
+
+    .login{
+      cursor: pointer;
+      ol{
+        li{
+          display: none;
+        }
+      }
+      .icon-3{
+        position: absolute;
+        top: 50px;
+        font-size: 20px;
+
+      }
+      
+      
+    }
+
+    .logo-img > a{
+     left: -30px;
+  }
+
+  // dropdown meun section
+  .dropdown{
+    padding-left: 10px;
+  }
+  
+  // search-bar section
+  #main-body{
+   .main-body-img{
+      width: 500px;
+    }
+
+    .logo-content{
+      text-align: center;
+      
+    }
+  }
+
+  // Change theme  section
+  #naruto-logo{
+    .left-image{
+      display: none;
+  }
+  }
+
+  #theme-details{
+
+    #theme-details-2{
+      .Anime-list{
+        flex-wrap: wrap;
+        flex: 1;
+      }
+    }
+  }
+
+  // The change theme icon
+  #Theme{
+    .switch-container{
+        padding-right: 0 !important;
+    }
+  }  
   }
